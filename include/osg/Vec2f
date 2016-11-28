@@ -60,6 +60,8 @@ class Vec2f
 
         inline void set( value_type x, value_type y ) { _v[0]=x; _v[1]=y; }
 
+        inline void set( const Vec2f& rhs) { _v[0]=rhs._v[0]; _v[1]=rhs._v[1]; }
+
         inline value_type & operator [] (int i) { return _v[i]; }
         inline value_type operator [] (int i) const { return _v[i]; }
 
